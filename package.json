@@ -1,0 +1,66 @@
+{
+  "name": "it-vue3-countdown",
+  "description": "The Vue.js v3 Countdown Component",
+  "version": "1.0.0",
+  "author": "itartweb <itartweb@gmail.com>",
+  "license": "MIT",
+  "main": "dist/it-vue3-countdown.js",
+  "module": "dist/it-vue3-countdown.esm.js",
+  "unpkg": "dist/it-vue3-countdown.min.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itartweb/it-vue3-countdown.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-component",
+    "countdown",
+    "vue-countdown",
+    "vue3-countdown",
+    "it-vue3-countdown"
+  ],
+  "scripts": {
+    "dev": "cd demo && yarn run dev",
+    "build:demo": "cd demo && yarn run build",
+    "build:lib": "rollup -c rollup.config.js",
+    "preview": "cd demo && yarn run preview",
+    "lint": "eslint --ext .js,.vue ."
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@vue/compiler-sfc": "^3.2.39",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^7.11.1",
+    "moment": "^2.29.0",
+    "prettier": "3.0.3",
+    "rollup": "^2.52.2",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-vue": "^6.0.0",
+    "sass": "^1.35.1",
+    "uuid": "^9.0.1",
+    "vue": "^3.2.39"
+  },
+  "dependencies": {}
+}
