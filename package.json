@@ -7,9 +7,11 @@
   "main": "dist/it-vue3-countdown.js",
   "module": "dist/it-vue3-countdown.esm.js",
   "unpkg": "dist/it-vue3-countdown.min.js",
+  "types": "./types/index.d.ts",
   "files": [
     "dist",
-    "src"
+    "src",
+    "types"
   ],
   "repository": {
     "type": "git",
