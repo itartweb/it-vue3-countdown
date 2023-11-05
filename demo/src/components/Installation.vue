@@ -1,6 +1,6 @@
 <template>
   <div>
-    <countdown :countdownSize="countdownSize" :deadlineISO="deadlineISO" />
+    <it-countdown :countdownSize="countdownSize" :deadlineISO="deadlineISO" />
   </div>
 </template>
 

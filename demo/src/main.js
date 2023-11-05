@@ -1,9 +1,9 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import { createRouter, createWebHashHistory } from 'vue-router'
-import Countdown from '../../src'
+import {createApp} from 'vue';
+import App from './App.vue';
+import {createRouter, createWebHashHistory} from 'vue-router';
+import ItCountdown from '../../src';
 
-import Installation from './components/Installation.vue'
+import Installation from './components/Installation.vue';
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -14,6 +14,6 @@ const router = createRouter({
       component: Installation,
     },
   ],
-})
+});
 
-createApp(App).use(router).use(Countdown).mount('#app')
+createApp(App).use(router).use(ItCountdown).mount('#app');

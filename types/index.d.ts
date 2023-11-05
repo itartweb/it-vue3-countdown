@@ -1,6 +1,6 @@
 import {App} from 'vue';
 
-export interface Countdown {
+export interface ItCountdown {
   deadline?: string;
   deadlineISO?: string;
   deadlineDate?: string;

@@ -5751,7 +5751,7 @@ const fmt = 'YYYY-MM-DD HH:mm:ss';
 
 const __default__ = {
   compatConfig: {MODE: 3},
-  name: 'Countdown',
+  name: 'ItCountdown',
   emits: ['timeElapsed'],
   setup(props, {emit}) {
     const uuid = v4();
@@ -6030,11 +6030,11 @@ const __default__ = {
 };
 const __injectCSSVars__ = () => {
 useCssVars(_ctx => ({
-  "21d8649e-mainColor": (_ctx.mainColor),
-  "21d8649e-labelColor": (_ctx.labelColor),
-  "21d8649e-mainFlipBackgroundColor": (_ctx.mainFlipBackgroundColor),
-  "21d8649e-secondFlipColor": (_ctx.secondFlipColor),
-  "21d8649e-secondFlipBackgroundColor": (_ctx.secondFlipBackgroundColor)
+  "70353446-mainColor": (_ctx.mainColor),
+  "70353446-labelColor": (_ctx.labelColor),
+  "70353446-mainFlipBackgroundColor": (_ctx.mainFlipBackgroundColor),
+  "70353446-secondFlipColor": (_ctx.secondFlipColor),
+  "70353446-secondFlipBackgroundColor": (_ctx.secondFlipBackgroundColor)
 }));};
 const __setup__ = __default__.setup;
 __default__.setup = __setup__
@@ -6098,14 +6098,14 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 }
 
 __default__.render = render;
-__default__.__scopeId = "data-v-21d8649e";
-__default__.__file = "src/components/Countdown.vue";
+__default__.__scopeId = "data-v-70353446";
+__default__.__file = "src/components/ItCountdown.vue";
 
 var index = {
   install: function install(Vue) {
-    Vue.component('Countdown', __default__);
+    Vue.component('ItCountdown', __default__);
   }
 };
 
-export { __default__ as Countdown, index as default };
+export { __default__ as ItCountdown, index as default };
 //# sourceMappingURL=it-vue3-countdown.esm.js.map

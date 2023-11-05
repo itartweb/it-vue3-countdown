@@ -1,9 +1,9 @@
-import Countdown from './components/Countdown.vue'
+import ItCountdown from './components/ItCountdown.vue';
 
 export default {
   install(Vue) {
-    Vue.component('Countdown', Countdown)
+    Vue.component('ItCountdown', ItCountdown);
   },
-}
+};
 
-export { Countdown }
+export {ItCountdown};
