@@ -31,7 +31,7 @@ import {v4} from 'uuid';
 
 export default {
   compatConfig: {MODE: 3},
-  name: 'Countdown',
+  name: 'ItCountdown',
   emits: ['timeElapsed'],
   setup(props, {emit}) {
     const uuid = v4();
