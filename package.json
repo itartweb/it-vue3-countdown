@@ -1,7 +1,7 @@
 {
   "name": "it-vue3-countdown",
   "description": "The Vue.js v3 Countdown Component",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "itartweb <itartweb@gmail.com>",
   "license": "MIT",
   "main": "dist/it-vue3-countdown.js",

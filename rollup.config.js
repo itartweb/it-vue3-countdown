@@ -1,11 +1,11 @@
-import path from 'path'
-import vue from 'rollup-plugin-vue'
-import commonjs from 'rollup-plugin-commonjs'
-import postcss from 'rollup-plugin-postcss'
-import babel from '@rollup/plugin-babel'
-import resolve from '@rollup/plugin-node-resolve'
-import { terser } from 'rollup-plugin-terser'
-import pkg from './package.json'
+import path from 'path';
+import vue from 'rollup-plugin-vue';
+import commonjs from 'rollup-plugin-commonjs';
+import postcss from 'rollup-plugin-postcss';
+import babel from '@rollup/plugin-babel';
+import resolve from '@rollup/plugin-node-resolve';
+import {terser} from 'rollup-plugin-terser';
+import pkg from './package.json';
 
 const plugins = [
   vue({
@@ -19,11 +19,11 @@ const plugins = [
     presets: ['@babel/preset-env'],
   }),
   postcss({
-    extract: path.resolve('dist/it-vue-sidebar-menu.css'),
+    extract: path.resolve('dist/it-vue3-countdown.css'),
     minimize: true,
     sourceMap: true,
   }),
-]
+];
 
 export default {
   input: 'src/index.js',
@@ -40,7 +40,7 @@ export default {
       format: 'umd',
       exports: 'named',
       sourcemap: true,
-      name: 'it-vue-sidebar-menu',
+      name: 'it-vue3-countdown',
       globals: {
         vue: 'Vue',
       },
@@ -58,4 +58,4 @@ export default {
     },
   ],
   plugins,
-}
+};
