@@ -2,7 +2,7 @@ import {App} from 'vue';
 
 export interface ItCountdown {
   deadline?: string;
-  deadlineISO?: string;
+  deadlineIso?: string;
   deadlineDate?: string;
   countdownSize?: string;
   labelSize?: string;

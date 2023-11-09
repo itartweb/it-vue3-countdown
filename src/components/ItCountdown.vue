@@ -35,7 +35,7 @@ export default {
   emits: ['timeElapsed'],
   setup(props, {emit}) {
     const uuid = v4();
-    const {deadline, stop, showDays, showHours, showMinutes, showSeconds, labels, deadlineDate, deadlineISO} =
+    const {deadline, stop, showDays, showHours, showMinutes, showSeconds, labels, deadlineDate, deadlineIso} =
       toRefs(props);
 
     let now = ref(Math.trunc(new Date().getTime() / 1000));
@@ -190,8 +190,8 @@ export default {
       if (deadlineDate.value != null) {
         epoch = Date.parse(deadlineDate.value);
       }
-      if (deadlineISO.value) {
-        epoch = Date.parse(deadlineISO.value);
+      if (deadlineIso.value) {
+        epoch = Date.parse(deadlineIso.value);
       }
       date.value = Math.trunc(epoch / 1000);
       if (!date.value) {
@@ -223,7 +223,7 @@ export default {
       required: false,
       default: moment().add(32, 'd').add(10, 's').format(fmt),
     },
-    deadlineISO: {
+    deadlineIso: {
       type: String,
       required: false,
     },
